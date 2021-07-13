@@ -880,7 +880,7 @@ comp<-reactive({input$IO})
 ```{r}
 
 
-renderDataTable({
+DT::renderDataTable({
   datatable(my_data1(), extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
     buttons = c('csv', 'excel', 'pdf', 'print'),
@@ -1058,7 +1058,7 @@ my_data2<- reactive({
 ```{r}
 
 
-renderDataTable({
+DT::renderDataTable({
   
     datatable(my_data2(), extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
@@ -1334,7 +1334,7 @@ print(p)
 ### Table: Governance Ranking and Score   
 
 ```{r}
-renderDataTable({
+DT::renderDataTable({
   datatable(Snap(),
     options = list(pageLength = 10)
 )})
@@ -1524,7 +1524,7 @@ my_data5<- reactive({
 ```{r}
 
 
-renderDataTable({
+DT::renderDataTable({
   
     datatable(my_data5(), extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
@@ -1672,7 +1672,7 @@ renderPlot({
 ```{r}
 
 
-renderDataTable({
+DT::renderDataTable({
   
     datatable(dataset2(), extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
@@ -1821,7 +1821,7 @@ renderPlot({
 ```{r}
 
 
-renderDataTable({
+DT::renderDataTable({
   
     datatable(dataset42(), extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
@@ -1879,7 +1879,7 @@ my_data99<- reactive({
     return(Y)
 })
 
-renderDataTable({
+DT::renderDataTable({
   datatable(my_data99(), extensions = 'Buttons', options = list(
     dom = 'Blfrtip',
     buttons = c('csv', 'excel', 'pdf', 'print'),
